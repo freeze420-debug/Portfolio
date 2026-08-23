@@ -5,6 +5,7 @@
 
 export interface ProfileConfig {
   name: string;
+  avatarUrl?: string;
   pronouns?: string;
   monogram: string;
   role: string;

@@ -25,6 +25,8 @@ import farmosThumb from '../assets/images/farmos_thumbnail_1787477772362.jpg';
 export const profileConfig: ProfileConfig = {
   // Your Full Name (or customize with your preferred identity)
   name: "Talha Bin Monir",
+  // Profile picture URL (uses your GitHub profile photo so it is always visible everywhere)
+  avatarUrl: "https://github.com/freeze420-debug.png",
   pronouns: "he/him",
   monogram: "TBM",
   role: "Computer Science & Engineering Student | Software Developer",
