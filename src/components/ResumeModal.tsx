@@ -163,20 +163,22 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             ))}
           </div>
 
-          {/* Certifications & Independent Study */}
-          <div className="space-y-2">
-            <h2 className="text-xs font-black uppercase tracking-widest text-[#0A0A0A] border-b border-[#D8D6D0] pb-1">
-              Certifications & Technical Specializations
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-              {academicJourneyData.certifications.map((cert, i) => (
-                <div key={i} className="p-3 bg-[#F3F1EC] rounded-xl border border-[#D8D6D0] space-y-0.5">
-                  <span className="font-bold text-[#0A0A0A] block">• {cert.name}</span>
-                  <div className="text-[11px] text-[#666] font-mono">{cert.issuer} ({cert.date})</div>
-                </div>
-              ))}
+          {/* Certifications & Independent Study (if available) */}
+          {academicJourneyData.certifications.length > 0 && (
+            <div className="space-y-2">
+              <h2 className="text-xs font-black uppercase tracking-widest text-[#0A0A0A] border-b border-[#D8D6D0] pb-1">
+                Certifications & Technical Specializations
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                {academicJourneyData.certifications.map((cert, i) => (
+                  <div key={i} className="p-3 bg-[#F3F1EC] rounded-xl border border-[#D8D6D0] space-y-0.5">
+                    <span className="font-bold text-[#0A0A0A] block">• {cert.name}</span>
+                    <div className="text-[11px] text-[#666] font-mono">{cert.issuer} ({cert.date})</div>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
         </div>
 

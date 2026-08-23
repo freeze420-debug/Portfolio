@@ -473,7 +473,7 @@ export const academicJourneyData: AcademicJourney = {
   major: "Computer Science & Engineering",
   institution: "Islamic University of Technology", // Configurable
   currentSemester: "4th Semester (Sophomore Year)",
-  expectedGraduation: "2027",
+  expectedGraduation: "2028",
   location: "Dhaka, Bangladesh",
   currentStanding: "B.Sc. in CSE Undergraduate (Sophomore)",
   semesters: [
@@ -545,11 +545,7 @@ export const academicJourneyData: AcademicJourney = {
     }
   ],
   achievements: [],
-  certifications: [
-    { name: "Algorithmic Toolbox & Data Structures Specialization", issuer: "Coursera / UC San Diego", date: "2024" },
-    { name: "C++ Advanced Systems & Memory Programming", issuer: "Interactive Coursework", date: "2025" },
-    { name: "Computer Networks: A Systems Approach", issuer: "Independent Study", date: "2025" }
-  ]
+  certifications: []
 };
 
 /**
