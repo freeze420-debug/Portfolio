@@ -66,7 +66,7 @@ export const profileConfig: ProfileConfig = {
   metrics: [
     { label: "Academic Standing", value: "4th Sem", detail: "B.Sc. in Computer Science & Engineering" },
     { label: "Archived Projects", value: "5+", detail: "C, C++, Java, & Sockets" },
-    { label: "Algorithms Solved", value: "450+", detail: "LeetCode, Codeforces, & CSES" },
+    { label: "Algorithms Solved", value: "150+", detail: "LeetCode, Codeforces, & CSES" },
     { label: "Core Focus", value: "Systems & DSA", detail: "Memory, Concurrency, & Architecture" },
   ],
 
