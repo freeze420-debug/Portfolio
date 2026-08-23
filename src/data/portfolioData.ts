@@ -5,6 +5,7 @@ import {
   AcademicJourney, 
   ResearchItem, 
   ArticleItem, 
+  FeaturedTalkItem,
   CurrentlyExploringItem 
 } from '../types/portfolio';
 
@@ -56,7 +57,7 @@ export const profileConfig: ProfileConfig = {
   // Contact Information & Links
   contact: {
     email: "talhabinmonir10@gmail.com", // Replace with your email
-    github: "https://github.com/talhabinmonir", // Replace with your GitHub URL
+    github: "https://github.com/freeze420-debug", // Replace with your GitHub URL
     resumePdfName: "Talha_Bin_Monir_Resume.pdf",
     resumeUrl: "#resume-download", // Will trigger instant formatted CV modal/download
   },
@@ -479,17 +480,17 @@ export const academicJourneyData: AcademicJourney = {
       term: "Spring",
       year: "2026",
       status: "Current",
-      focus: "Advanced Systems, Networking, Database Architectures & Theory of Computation",
+      focus: "Telecommunications, Algorithm Design, Scalable System Architecture & Probabilistic Modeling",
       keyCourses: [
-        { code: "CSE-221", name: "Computer Networks & Sockets", description: "OSI and TCP/IP stack, transport layer protocols, socket programming, routing algorithms, and network security." },
-        { code: "CSE-223", name: "Database Management Systems", description: "Relational algebra, SQL, normalization (BCNF), transaction indexing (B+ Trees), and ACID properties." },
-        { code: "CSE-225", name: "Operating Systems", description: "Kernel structures, process synchronization, deadlocks, paging, virtual memory, and file system implementation." },
-        { code: "MAT-221", name: "Probability & Statistics for Engineers", description: "Random variables, Bayesian inference, stochastic processes, and statistical distributions in computing." }
+        { name: "Data and Telecommunications", description: "Signal transmission, digital modulation, multiplexing, physical & data link layer protocols, switching architectures, and telecommunication standards." },
+        { name: "Algorithms", description: "Algorithm design paradigms, greedy methods, dynamic programming, graph algorithms, network flow, and complexity analysis." },
+        { name: "System Analysis and Design", description: "Software development lifecycles (SDLC), UML architectural modeling, requirements engineering, object-oriented analysis, and scalable system design." },
+        { name: "Probability and Statistics", description: "Probability distributions, random variables, hypothesis testing, Bayesian inference, and stochastic modeling in computing." }
       ],
       semesterHighlights: [
-        "Engineering JavaFX Multi-Client Network Chat with raw socket concurrency",
-        "Deep diving into Linux kernel mechanisms and virtual memory page management",
-        "Exploring database indexing and query optimization on large datasets"
+        "Deep diving into advanced graph algorithms, dynamic programming, and asymptotic complexity analysis",
+        "Analyzing data transmission pipelines, communication protocols, and packet switching networks",
+        "Designing modular software architecture blueprints using UML and modern system engineering practices"
       ]
     },
     {
@@ -497,17 +498,17 @@ export const academicJourneyData: AcademicJourney = {
       term: "Fall",
       year: "2025",
       status: "Completed",
-      focus: "Data Structures, Object-Oriented Programming, and Linear Algebra",
+      focus: "Core Software Architecture, Data Structures, Machine Organization & Database Systems",
       keyCourses: [
-        { code: "CSE-211", name: "Data Structures & Algorithms", description: "Trees, graphs, heaps, dynamic programming, sorting complexities, and asymptotic proofs.", grade: "A+" },
-        { code: "CSE-213", name: "Object-Oriented Programming (Java/C++)", description: "Design patterns, inheritance, polymorphism, abstract classes, interfaces, and GUI applications.", grade: "A+" },
-        { code: "CSE-215", name: "Digital Logic Design & Computer Architecture", description: "Combinational and sequential circuits, ALU design, instruction set architectures, and pipelining.", grade: "A" },
-        { code: "MAT-211", name: "Linear Algebra & Differential Equations", description: "Vector spaces, eigenvalues, matrix transformations, and applications in computing.", grade: "A+" }
+        { name: "Object Oriented Programming", description: "Design patterns, encapsulation, inheritance, polymorphism, interfaces, generic programming, and modular application design.", grade: "A+" },
+        { name: "Data Structures", description: "Trees, graphs, heaps, hash tables, memory-efficient data representations, and asymptotic time-space analysis.", grade: "A+" },
+        { name: "Computer Organization and Architecture", description: "Instruction set architectures (ISA), CPU datapath, pipelining, cache memory hierarchies, and microarchitecture.", grade: "A" },
+        { name: "Database Management Systems", description: "Relational algebra, SQL query optimization, normalization (BCNF/3NF), indexing (B+ Trees), and ACID transactions.", grade: "A+" }
       ],
       semesterHighlights: [
-        "Constructed Glinsky Hexagonal Chess Engine with Raylib graphics in C",
-        "Achieved A+ grades in core DSA and Object-Oriented Software Design",
-        "Solved 150+ competitive programming challenges in dynamic programming and graph theory"
+        "Mastered core data structure implementations and algorithmic runtime efficiency",
+        "Engineered object-oriented applications emphasizing clean design patterns and maintainability",
+        "Modeled relational database schemas, transactions, and optimized SQL queries"
       ]
     },
     {
@@ -515,15 +516,14 @@ export const academicJourneyData: AcademicJourney = {
       term: "Spring",
       year: "2025",
       status: "Completed",
-      focus: "Structured Programming, Discrete Mathematics & Electrical Foundations",
+      focus: "Discrete Mathematical Foundations & Digital Circuit Logic Design",
       keyCourses: [
-        { code: "CSE-121", name: "Structured Programming in C", description: "Pointers, memory management, file I/O, recursion, and modular software design.", grade: "A+" },
-        { code: "CSE-123", name: "Discrete Mathematics", description: "Logic, set theory, combinatorics, graph theory foundations, and mathematical induction.", grade: "A+" },
-        { code: "PHY-121", name: "Engineering Physics & Electromagnetism", description: "Semiconductors, solid-state electronics, and wave mechanics.", grade: "A" }
+        { name: "Discrete Mathematics", description: "Propositional logic, set theory, mathematical induction, combinatorics, graph theory foundations, and Boolean algebra.", grade: "A+" },
+        { name: "Digital Logic Design", description: "Combinational and sequential logic circuits, Karnaugh maps, flip-flops, registers, counters, and finite state machines (FSM).", grade: "A+" }
       ],
       semesterHighlights: [
-        "Mastered manual memory management and pointer arithmetic in C99",
-        "Engineered structured modular data processing applications in C99"
+        "Designed combinational and sequential logic circuits and finite state machines",
+        "Applied mathematical induction, formal logic proofs, and combinatorial reasoning"
       ]
     },
     {
@@ -531,14 +531,14 @@ export const academicJourneyData: AcademicJourney = {
       term: "Fall",
       year: "2024",
       status: "Completed",
-      focus: "Foundations of Computing, Calculus & Engineering Fundamentals",
+      focus: "Foundational Computing Principles & Structured Procedural Programming",
       keyCourses: [
-        { code: "CSE-111", name: "Introduction to Computer Systems", description: "Binary arithmetic, algorithm design, hardware abstractions, and computational thinking.", grade: "A+" },
-        { code: "MAT-111", name: "Calculus & Analytical Geometry", description: "Limits, derivatives, integrals, and multivariate calculus for computational modeling.", grade: "A+" }
+        { name: "Computing for Engineers", description: "Foundational computational concepts, algorithm formulation, hardware abstractions, and engineering computation.", grade: "A+" },
+        { name: "Structured Programming", description: "Procedural programming in C, control flow, functions, pointers, memory allocation, and modular software design.", grade: "A+" }
       ],
       semesterHighlights: [
-        "Strengthened mathematical foundations in calculus, logic, and analytical problem solving",
-        "Practiced foundational problem solving on online algorithmic judges"
+        "Mastered imperative programming foundations, pointers, and modular code design in C",
+        "Established strong engineering computation and algorithmic problem-solving foundations"
       ]
     }
   ],
@@ -784,3 +784,22 @@ export const currentlyExploringData: CurrentlyExploringItem[] = [
     startedDate: "Jan 2026"
   }
 ];
+
+/**
+ * =========================================================================
+ * 🎙️ FEATURED TALKS & VIDEOS
+ * =========================================================================
+ */
+export const featuredTalksData: FeaturedTalkItem[] = [
+  {
+    id: "complex-engineering-problem",
+    title: "A Complex Engineering Problem",
+    youtubeUrl: "https://youtu.be/Mbrb5lV3MSE?si=I691WrfFHLz9mJXc",
+    videoId: "Mbrb5lV3MSE",
+    thumbnailUrl: "https://img.youtube.com/vi/Mbrb5lV3MSE/maxresdefault.jpg",
+    speaker: "Talha Bin Monir",
+    date: "2026",
+    description: "In-depth engineering analysis, system modeling, and technical problem-solving breakdown."
+  }
+];
+

@@ -60,7 +60,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResumeModa
         <div className="mb-14 pb-6 border-b border-[#D8D6D0]">
           <div className="flex items-center gap-2 text-[10px] font-bold tracking-[0.25em] text-[#FF9D2E] uppercase mb-2">
             <span className="w-2 h-2 rounded-full bg-[#FF9D2E]" />
-            <span>Section // 09</span>
+            <span>Section // 08</span>
           </div>
           <h2 className="font-display text-4xl sm:text-6xl lg:text-7xl font-black text-[#0A0A0A] tracking-tight leading-[1.02] uppercase">
             LET'S BUILD SOMETHING.

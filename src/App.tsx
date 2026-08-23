@@ -5,10 +5,10 @@ import { HeroSection } from './components/HeroSection';
 import { AboutSection } from './components/AboutSection';
 import { SkillsSection } from './components/SkillsSection';
 import { FeaturedProjects } from './components/FeaturedProjects';
-import { ProjectArchive } from './components/ProjectArchive';
 import { AcademicJourney } from './components/AcademicJourney';
 import { ResearchSection } from './components/ResearchSection';
 import { WritingSection } from './components/WritingSection';
+import { FeaturedTalks } from './components/FeaturedTalks';
 import { CurrentlyExploring } from './components/CurrentlyExploring';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
@@ -74,10 +74,10 @@ export default function App() {
       'about',
       'skills',
       'projects',
-      'archive',
       'journey',
       'research',
       'writing',
+      'talks',
       'now',
       'contact',
     ];
@@ -154,31 +154,29 @@ export default function App() {
         {/* 03. Skills & Technologies */}
         <SkillsSection />
 
-        {/* 04. Featured Projects Showcase */}
+        {/* 03. Featured Projects Showcase */}
         <FeaturedProjects 
           onSelectProject={handleOpenProject}
         />
 
-        {/* 05. Complete Project Archive */}
-        <ProjectArchive 
-          onSelectProject={handleOpenProject}
-        />
-
-        {/* 06. Academic Journey & Coursework */}
+        {/* 04. Academic Journey & Coursework */}
         <AcademicJourney />
 
-        {/* 07. Research & Exploration */}
+        {/* 05. Research & Exploration */}
         <ResearchSection />
 
-        {/* 08. Writing & Technical Notes */}
+        {/* 06. Writing & Technical Notes */}
         <WritingSection 
           onSelectArticle={(article) => setSelectedArticle(article)}
         />
 
-        {/* 09. Currently Exploring / Roadmap */}
+        {/* 07. Featured Talks & Videos */}
+        <FeaturedTalks />
+
+        {/* 08. Currently Exploring / Roadmap */}
         <CurrentlyExploring />
 
-        {/* 10. Contact & Dispatch Form */}
+        {/* 08. Contact & Dispatch Form */}
         <ContactSection 
           onOpenResumeModal={() => setIsResumeModalOpen(true)}
         />

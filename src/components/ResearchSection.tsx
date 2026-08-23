@@ -34,7 +34,7 @@ export const ResearchSection: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 text-[10px] font-bold tracking-[0.25em] text-[#FF9D2E] uppercase mb-2">
               <span className="w-2 h-2 rounded-full bg-[#FF9D2E]" />
-              <span>Section // 06</span>
+              <span>Section // 05</span>
             </div>
             <h2 className="font-display text-3xl sm:text-5xl font-black text-[#0A0A0A] tracking-tight uppercase">
               RESEARCH & EXPLORATION

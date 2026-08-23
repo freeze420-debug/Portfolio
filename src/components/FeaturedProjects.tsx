@@ -32,11 +32,14 @@ export const FeaturedProjects: React.FC<FeaturedProjectsProps> = ({ onSelectProj
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="#archive"
-              className="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-widest text-[#0A0A0A] hover:text-[#FF9D2E] transition-colors border-b border-[#0A0A0A] pb-0.5"
+              id="projects-view-archive-link"
+              href="https://github.com/freeze420-debug"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl bg-[#0A0A0A] text-white hover:bg-[#FF9D2E] hover:text-[#0A0A0A] text-xs font-bold uppercase tracking-wider transition-all duration-200 shadow-md hover:shadow-lg group border border-[#0A0A0A] hover:border-[#FF9D2E]"
             >
-              <span>View Full Archive ({featuredProjectsData.length}+)</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              <span className="tracking-wide">View Full Archive ({featuredProjectsData.length}+)</span>
+              <ArrowUpRight className="w-4 h-4 text-[#FF9D2E] group-hover:text-[#0A0A0A] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </a>
           </div>
         </div>

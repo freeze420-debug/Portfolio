@@ -35,10 +35,10 @@ export const Navigation: React.FC<NavigationProps> = ({
     { label: 'About', href: '#about', id: 'about' },
     { label: 'Skills', href: '#skills', id: 'skills' },
     { label: 'Projects', href: '#projects', id: 'projects' },
-    { label: 'Archive', href: '#archive', id: 'archive' },
     { label: 'Journey', href: '#journey', id: 'journey' },
     { label: 'Research', href: '#research', id: 'research' },
     { label: 'Writing', href: '#writing', id: 'writing' },
+    { label: 'Talks', href: '#talks', id: 'talks' },
     { label: 'Now', href: '#now', id: 'now' },
     { label: 'Contact', href: '#contact', id: 'contact' },
   ];

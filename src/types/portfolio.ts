@@ -117,7 +117,7 @@ export interface AcademicJourney {
     status: 'Completed' | 'Current' | 'Upcoming';
     focus: string;
     keyCourses: {
-      code: string;
+      code?: string;
       name: string;
       description: string;
       grade?: string;
@@ -170,6 +170,19 @@ export interface ArticleItem {
   featured?: boolean;
   content: string;
   keyTakeaways: string[];
+}
+
+export interface FeaturedTalkItem {
+  id: string;
+  title: string;
+  youtubeUrl: string;
+  videoId?: string;
+  thumbnailUrl?: string;
+  speaker?: string;
+  date?: string;
+  duration?: string;
+  description?: string;
+  tags?: string[];
 }
 
 export interface CurrentlyExploringItem {
